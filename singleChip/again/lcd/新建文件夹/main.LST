@@ -1,0 +1,154 @@
+C51 COMPILER V9.01   MAIN                                                                  06/30/2012 23:39:42 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include "lcd1602.h"
+   2          #include "key.h"
+   3          #include "stdio.h"
+   4          #include "stdlib.h"
+   5          #include "string.h"
+   6          //#include "sonar.h"
+   7          //#include "remote.h"
+   8          #include "reg52.h"
+   9          sbit Sound=P1^0;
+  10          //sbit Check=P2^0;
+  11          sbit Listen=P1^3;
+  12          
+  13          
+  14          unsigned int numa=440;
+  15          unsigned long freq;
+  16          void Sound_Endure() interrupt 1
+  17          {
+  18   1      TL0=freq%256;
+  19   1      TH0=freq/256;
+  20   1      Sound=!Sound;
+  21   1      }
+  22          
+  23          
+  24          bit last,now;
+  25          unsigned int L_length,L_n=0,L_freq;
+  26          unsigned long L_ttlength=0;
+  27          
+  28          
+  29          
+  30          
+  31          
+  32          int Listen_Endure()
+  33          {
+  34   1      L_n=0;
+  35   1      L_ttlength=0;
+  36   1      TL1=0;
+  37   1      TH1=0;
+  38   1      TR1=1;
+  39   1      while(1)
+  40   1      {
+  41   2              now=Listen;
+  42   2              if (now && !last)//ÉÏÉýÑØ
+  43   2                      {
+  44   3                      L_length=TH1*256+TL1;
+  45   3                      L_ttlength=L_ttlength+L_length;
+  46   3                      TL1=0;
+  47   3                      TH1=0;
+  48   3                      L_n++;
+  49   3                      }
+  50   2              if (L_n>200)
+  51   2                      {
+  52   3                      L_freq=921600*L_n/L_ttlength;
+  53   3                      L_n=0;
+  54   3                      L_ttlength=0;           
+  55   3                      //LCD_Write_Int(0,1,numa);
+C51 COMPILER V9.01   MAIN                                                                  06/30/2012 23:39:42 PAGE 2   
+
+  56   3                      TR1=0;
+  57   3                      return L_freq;  
+  58   3                      }       
+  59   2              last=now;
+  60   2      }
+  61   1      
+  62   1      }
+  63          
+  64          
+  65          
+  66          
+  67          void Sound_Init()
+  68          {
+  69   1      EA=1;
+  70   1      TL0=0;//63341%256;
+  71   1      TH0=0;//63341/256;
+  72   1      ET0=1;
+  73   1      TR0=1;
+  74   1      TMOD=1;
+  75   1      }
+  76          
+  77          unsigned int mem;
+  78          char * memstring;
+  79          void main()
+  80          {
+  81   1      LCD_Init();
+  82   1      //Remote_Init();
+  83   1      //LCD_Light=1;
+  84   1      LCD_Write_String(0,0,"Listen");
+  85   1      //LCD_Write_Int(0,1,numa);
+  86   1      Sound_Init();
+  87   1      freq=(65536-921600/numa);
+  88   1      
+  89   1      //LCD_Write_String(LCD_Write_Int(0,1,numa),1,"Hz");     
+  90   1      while (1)
+  91   1              {
+  92   2              
+  93   2              /*char k=waitkey();
+  94   2                      
+  95   2              LCD_Write_Char(6,0,k);                                  
+  96   2              
+  97   2              switch (k)
+  98   2              {
+  99   2              case 'A':if (1)numa+=100;break;
+ 100   2              case 'B':if (1)numa-=100;break;
+ 101   2              case 'C':if (1)numa+=10;break;
+ 102   2              case 'D':if (1)numa-=10;break;
+ 103   2              }
+ 104   2              freq=(65536-921600/numa);
+ 105   2              k=LCD_Write_Int(0,1,numa);
+ 106   2              LCD_Write_String(k,1,"Hz");(*/  
+ 107   2              //DelayMs(3000);
+ 108   2              
+ 109   2              LCD_Write_Int(0,1,Listen_Endure());
+ 110   2              
+ 111   2              
+ 112   2              /*char k=waitkey();
+ 113   2              if (k=='1')
+ 114   2              {        
+ 115   2              char * memstring;
+ 116   2              itoa(mem,memstring);
+ 117   2              LCD_Write_String(0,1,memstring);
+C51 COMPILER V9.01   MAIN                                                                  06/30/2012 23:39:42 PAGE 3   
+
+ 118   2              }
+ 119   2              if (Remote_FAG)
+ 120   2                      {
+ 121   2                              Remote_FAG=0;
+ 122   2                              LCD_Write_Char(7,0,Remote_Key());                       
+ 123   2                      }
+ 124   2              */
+ 125   2      
+ 126   2              }
+ 127   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    926    ----
+   CONSTANT SIZE    =      7    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     52      31
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      2    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

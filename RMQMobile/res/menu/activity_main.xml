@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_collect_send"
+        android:title="Collect and Send"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+    <item android:id="@+id/network_setting" 
+        android:title="Connect"
+        android:onClick="setNetwork">
+        
+    </item>
+    <item android:id="@+id/menu_search" android:title="Search"></item>
+    <item android:id="@+id/menu_sensor" android:title="Sensor"></item>
+    <item android:id="@+id/menu_phone" android:title="Calls"></item>
+    <item android:id="@+id/item_exit" android:title="Exit"></item>
+</menu>

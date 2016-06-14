@@ -1,0 +1,96 @@
+C51 COMPILER V9.01   MAIN                                                                  07/05/2012 16:30:59 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include"lcd1602.h"
+   2          
+   3          void UART_Init()
+   4          {
+   5   1              SCON=0x50;//8 bit data
+   6   1              T2CON=0x34;//T/C2
+   7   1              //RCAP2L=0xd9;
+   8   1              //RCAP2H=0xff;//baud:9600bit/s 12MHz L 12M/(2*16*(65536-t))
+   9   1              RCAP2L=0xdc;
+  10   1              RCAP2H=0xff; //t=11.0592M/(2*16*baud9600)
+  11   1              ES=1;//enable serial interrupt
+  12   1              EA=1;//enable all interrupt
+  13   1      }
+  14          
+  15          void UART_SendByte(unsigned char byte)
+  16          {
+  17   1              SBUF=byte;
+  18   1              while (TI==0);//·¢ËÍfinished TI=1;
+  19   1              TI=0;//clear
+  20   1      }
+  21          
+  22          /*void UART_IRQ() interrupt 4 //using interrupt
+  23          {
+  24                  unsigned char recv;
+  25                  if (RI)
+  26                  {               
+  27                          recv=SBUF;
+  28                          UART_SendByte(recv);
+  29                          LCD_Write_HEX(0,1,recv);
+  30                          RI=0;   
+  31                  }
+  32          }*/
+  33          
+  34          
+  35          unsigned char UART_Get()
+  36          {
+  37   1      unsigned char recv;
+  38   1                      
+  39   1                      recv=SBUF;
+  40   1                      RI=0;
+  41   1                      return recv;
+  42   1      }
+  43          
+  44          
+  45          
+  46          
+  47          unsigned char lcdx=0;
+  48          void main()
+  49          {
+  50   1      
+  51   1      UART_Init();
+  52   1      LCD_Init();
+  53   1      LCD_Write_String(0,0,"Serial:R&S");
+  54   1      LCD_Show_Cursor();
+  55   1      while (1)
+C51 COMPILER V9.01   MAIN                                                                  07/05/2012 16:30:59 PAGE 2   
+
+  56   1      {
+  57   2      unsigned char recv;
+  58   2      if (RI)
+  59   2              {
+  60   3              recv=UART_Get();
+  61   3              UART_SendByte(recv);
+  62   3              LCD_Write_Char(lcdx,1,recv);
+  63   3              lcdx=(lcdx+1)%16;
+  64   3              
+  65   3              }
+  66   2      
+  67   2      
+  68   2      
+  69   2      }//while
+  70   1      
+  71   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    812    ----
+   CONSTANT SIZE    =     11    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3      42
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

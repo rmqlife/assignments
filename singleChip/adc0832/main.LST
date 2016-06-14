@@ -1,0 +1,48 @@
+C51 COMPILER V9.01   MAIN                                                                  07/01/2012 23:54:33 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include "reg52.h"
+   2          #include "lcd1602.h"
+   3          #include "adc.h"
+   4          
+   5          
+   6          
+   7          void main()
+   8          {
+   9   1       ADC_Init();
+  10   1       LCD_Init();
+  11   1       LCD_Write_String(0,0,"ADC0832:");
+  12   1       while (1)
+  13   1       {
+  14   2       int loop;
+  15   2       float adcout;
+  16   2       unsigned char dig0=ADC_Process();
+  17   2       adcout=(float) dig0/128*5;
+  18   2       for (loop=intlength(dig0);loop<7;loop++)
+  19   2              LCD_Write_Char(loop,1,' ');
+  20   2      //LCD_Write_Float(8,1,adcout,3);
+  21   2       LCD_Write_Float(8,0,adcout,3);
+  22   2       //LCD_Write_int(8,1,dig1);
+  23   2       ADC_Delay(5000);
+  24   2       }
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    956    ----
+   CONSTANT SIZE    =      9    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2      48
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

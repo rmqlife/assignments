@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"main.obj" 
+TO "74hc164" 
+RAMSIZE(256) 

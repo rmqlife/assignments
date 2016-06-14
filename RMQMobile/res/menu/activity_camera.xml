@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_save_pic"
+        android:title="Save"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/item_retake_pic"
+        android:title="Retake"/>
+    <item android:id="@+id/item_cancel"
+        android:title="Cancel"/>
+</menu>

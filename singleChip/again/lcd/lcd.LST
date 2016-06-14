@@ -1,0 +1,94 @@
+C51 COMPILER V9.01   LCD                                                                   06/29/2012 22:44:30 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN lcd.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcd.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include "lcd1602.h"
+   2          //#include "key.h"
+   3          #include "stdio.h"
+   4          #include "stdlib.h"
+   5          #include "string.h"
+   6          //#include "sonar.h"
+   7          #include "remote.h"
+   8          #include "reg52.h"
+   9          sbit Sound=P1^0;
+  10          sbit Check=P2^0;
+  11          
+  12          /*void Sound_Endure() interrupt 1
+  13          {
+  14          TL0=63341%256;
+  15          TH0=63341/256;
+  16          Sound=!Sound;
+  17          }
+  18          
+  19          void Sound_Init()
+  20          {
+  21          EA=1;
+  22          TL0=63341%256;
+  23          TH0=63341/256;
+  24          ET0=1;
+  25          TR0=1;
+  26          TMOD=1;
+  27          }*/
+  28          
+  29          unsigned int mem;
+  30          void main()
+  31          {
+  32   1      LCD_Init();
+  33   1      Remote_Init();
+  34   1      //LCD_Light=1;
+  35   1      LCD_Write_String(0,0,"Sound");
+  36   1      //Sound_Init();
+  37   1      while (1)
+  38   1              {
+  39   2              //char k=waitkey();     
+  40   2              //LCD_Write_Char(6,0,k);                                
+  41   2              //DelayMs(3000);
+  42   2              if (Remote_FAG)
+  43   2                      {
+  44   3                              Remote_FAG=0;
+  45   3                              LCD_Write_Char(7,0,Remote_Key());                       
+  46   3                      }
+  47   2              /*if (Check)
+  48   2                      TR1=1;
+  49   2              if (!Check)
+  50   2                      {
+  51   2                      TR1=0;
+  52   2                      TL1=0;
+  53   2                      TH1=0;
+  54   2                      mem=TL1+TH1*256;
+  55   2                      }
+C51 COMPILER V9.01   LCD                                                                   06/29/2012 22:44:30 PAGE 2   
+
+  56   2              if (Remote_FAG)
+  57   2                      {
+  58   2                              Remote_FAG=0;
+  59   2                              LCD_Write_Char(7,0,Remote_Key());                       
+  60   2                              if (Remote_Key()=='K')
+  61   2                              {
+  62   2                                      char * memstring;
+  63   2                                      itoa(mem,memstring);
+  64   2                                      LCD_Write_String(0,1,memstring);                        
+  65   2                              }
+  66   2                      }
+  67   2              */
+  68   2              }
+  69   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    669    ----
+   CONSTANT SIZE    =      6    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     38      18
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

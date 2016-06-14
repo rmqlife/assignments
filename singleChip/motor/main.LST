@@ -1,0 +1,90 @@
+C51 COMPILER V9.01   MAIN                                                                  07/04/2012 22:22:35 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include"lcd1602.h"
+   2          #include"remote.h"
+   3          #define motor P1
+   4          
+   5          unsigned char DeltaT;
+   6          void ACWise()
+   7          {
+   8   1      DelayMs(DeltaT);
+   9   1      motor=0x03;
+  10   1      DelayMs(DeltaT);
+  11   1      motor=0x06;
+  12   1      DelayMs(DeltaT);
+  13   1      motor=0x0c;
+  14   1      DelayMs(DeltaT);
+  15   1      motor=0x09;
+  16   1      }
+  17          void CWise()
+  18          {
+  19   1      DelayMs(DeltaT);
+  20   1      motor=0x09;
+  21   1      DelayMs(DeltaT);
+  22   1      motor=0x0c;
+  23   1      DelayMs(DeltaT);
+  24   1      motor=0x06;
+  25   1      DelayMs(DeltaT);
+  26   1      motor=0x03;
+  27   1      }
+  28          
+  29          
+  30          
+  31          void main()
+  32          {
+  33   1      bit CWfag=1;
+  34   1      motor=0x00;
+  35   1      LCD_Init();
+  36   1      LCD_Write_String(0,0,"Motor!");
+  37   1      Remote_Init();
+  38   1      DeltaT=10;
+  39   1      while(1)
+  40   1              {
+  41   2      
+  42   2              
+  43   2              if (CWfag)
+  44   2                      {CWise();}
+  45   2              else {ACWise();}
+  46   2              if (Remote_FAG)
+  47   2              {
+  48   3              char k=Remote_Key();
+  49   3                      switch (k)
+  50   3                      {
+  51   4                      case 'U': DeltaT+=10; break;
+  52   4                      case 'D': if (DeltaT>11) DeltaT-=10; break;
+  53   4                      case '+': DeltaT+=1; break;
+  54   4                      case '-': if (DeltaT>2) DeltaT-=1; break;
+  55   4                      case 'r': CWfag=!CWfag; 
+C51 COMPILER V9.01   MAIN                                                                  07/04/2012 22:22:35 PAGE 2   
+
+  56   4                      };
+  57   3              LCD_Write_String(5,1,"   ");
+  58   3              LCD_Write_Int(5,1,DeltaT);
+  59   3              LCD_Write_Char(8,1,k);
+  60   3              Remote_FAG=0;
+  61   3              } 
+  62   2      
+  63   2              
+  64   2              }                       //while
+  65   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1130    ----
+   CONSTANT SIZE    =     11    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     37      42
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1       1
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

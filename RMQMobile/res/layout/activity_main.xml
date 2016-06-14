@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical" >
+
+		<LinearLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+		<EditText android:id="@+id/edit_message"
+		    	android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:hint="@string/edit_message" />
+			<Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/button_send" 
+		    	android:onClick="sendMessage"
+		    	tools:context=".DisplayMessageActivity" />
+			</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:gravity="clip_vertical" >
+
+			<Button
+			    android:id="@+id/button1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/download"
+			    android:minWidth="48dip"
+			    android:onClick="loadPicture"
+			    android:text="" />
+
+			<Button
+			    android:id="@+id/button2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/device_access_switch_camera"
+			    android:minWidth="48dip"
+			    android:onClick="updatePicture"
+			    android:text="" />
+
+			<Button
+			    android:id="@+id/button3"
+			    style="?android:attr/buttonStyleSmall"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="fill_horizontal"
+			    android:background="@drawable/device_access_camera"
+			    android:onClick="takePhoto"
+			    android:text="" />
+
+		</LinearLayout>
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+ 
+</LinearLayout>

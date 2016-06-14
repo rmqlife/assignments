@@ -1,0 +1,734 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\jia biao\Documents\single\temperature\temp.uvproj
+Project File Date:  07/04/2012
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(15): error C231: 'P0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(16): error C231: 'SP': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(17): error C231: 'DPL': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(18): error C231: 'DPH': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(19): error C231: 'PCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(20): error C231: 'TCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(21): error C231: 'TMOD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(22): error C231: 'TL0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(23): error C231: 'TL1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(24): error C231: 'TH0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(25): error C231: 'TH1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(26): error C231: 'P1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(27): error C231: 'SCON': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(28): error C231: 'SBUF': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(29): error C231: 'P2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(30): error C231: 'IE': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(31): error C231: 'P3': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(32): error C231: 'IP': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(33): error C231: 'PSW': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(34): error C231: 'ACC': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(35): error C231: 'B': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(65): error C231: 'IT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(66): error C231: 'IE0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(67): error C231: 'IT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(68): error C231: 'IE1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(69): error C231: 'TR0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(70): error C231: 'TF0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(71): error C231: 'TR1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(72): error C231: 'TF1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(104): error C231: 'RI': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(105): error C231: 'TI': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(106): error C231: 'RB8': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(107): error C231: 'TB8': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(108): error C231: 'REN': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(109): error C231: 'SM2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(110): error C231: 'SM1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(111): error C231: 'SM0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(128): error C231: 'EX0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(129): error C231: 'ET0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(130): error C231: 'EX1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(131): error C231: 'ET1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(132): error C231: 'ES': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(133): error C231: 'ET2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(135): error C231: 'EA': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(149): error C231: 'RXD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(150): error C231: 'TXD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(151): error C231: 'INT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(152): error C231: 'INT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(153): error C231: 'T0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(154): error C231: 'T1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(155): error C231: 'WR': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(156): error C231: 'RD': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(161): error C231: 'PX0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(162): error C231: 'PT0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(163): error C231: 'PX1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(164): error C231: 'PT1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(165): error C231: 'PS': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(166): error C231: 'PT2': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(171): error C231: 'P': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(173): error C231: 'OV': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(174): error C231: 'RS0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(175): error C231: 'RS1': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(176): error C231: 'F0': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(177): error C231: 'AC': redefinition
+C:\KEIL\C51\INC\ATMEL\AT89X51.H(178): error C231: 'CY': redefinition
+MAIN.C(7): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(7): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(7): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_READTEMPERATURE?MAIN
+Program Size: data=32.0 xdata=0 code=984
+"temp" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(6): warning C209: '_ReadTemperature': too few actual parameters
+MAIN.C(7): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(6): warning C209: '_ReadTemperature': too few actual parameters
+MAIN.C(9): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C209: '_LCD_Write_String': too few actual parameters
+MAIN.C(9): warning C214: 'Argument': conversion: pointer to non-pointer
+MAIN.C(10): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C209: '_LCD_Write_String': too few actual parameters
+MAIN.C(9): warning C214: 'Argument': conversion: pointer to non-pointer
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=32.0 xdata=0 code=1000
+"temp" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=32.0 xdata=0 code=1000
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=32.0 xdata=0 code=1000
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(6): error C213: left side of asn-op not an lvalue
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(6): error C213: left side of asn-op not an lvalue
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+Program Size: data=32.0 xdata=0 code=1082
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_ITOA?MAIN
+Program Size: data=32.0 xdata=0 code=1082
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): warning C206: 'LCD_Write_Int': missing function-prototype
+MAIN.C(15): error C267: 'LCD_Write_Int': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=56.0 xdata=0 code=2214
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=56.0 xdata=0 code=2214
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+DS18B20.H(6): error C129: missing ';' before 'TEMPHIGH'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=58.0 xdata=0 code=2220
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=58.0 xdata=0 code=2220
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=58.0 xdata=0 code=2220
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=58.0 xdata=0 code=2222
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(7): error C202: 'temp': undefined identifier
+MAIN.C(9): error C141: syntax error near 'unsigned'
+MAIN.C(9): error C202: 't1': undefined identifier
+MAIN.C(10): error C202: 'temp': undefined identifier
+MAIN.C(11): error C202: 'temp': undefined identifier
+MAIN.C(15): error C202: 'temp': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): error C141: syntax error near 'unsigned'
+MAIN.C(9): error C202: 't1': undefined identifier
+MAIN.C(10): error C202: 'temp': undefined identifier
+MAIN.C(11): error C202: 'temp': undefined identifier
+MAIN.C(15): error C202: 'temp': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(10): error C202: 'temp': undefined identifier
+MAIN.C(11): error C202: 'temp': undefined identifier
+MAIN.C(15): error C202: 'temp': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(12): error C202: 'temp': undefined identifier
+MAIN.C(13): error C202: 'temp': undefined identifier
+MAIN.C(17): error C202: 'temp': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=55.0 xdata=0 code=2099
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): error C202: 'temp_ls': undefined identifier
+MAIN.C(10): error C202: 'temp_ms': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(13): error C202: 't1': undefined identifier
+MAIN.C(14): error C202: 't2': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(13): error C202: 't1': undefined identifier
+MAIN.C(14): error C202: 't2': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=55.0 xdata=0 code=2140
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(16): warning C173: missing return-expression
+MAIN.C(16): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=60.0 xdata=0 code=2286
+creating hex file from "temp"...
+"temp" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(6): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): warning C173: missing return-expression
+MAIN.C(15): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_FLOAT?MAIN
+Program Size: data=59.0 xdata=0 code=2154
+creating hex file from "temp"...
+"temp" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C173: missing return-expression
+MAIN.C(19): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+Program Size: data=52.0 xdata=0 code=2202
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C173: missing return-expression
+MAIN.C(19): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+Program Size: data=52.0 xdata=0 code=2197
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C173: missing return-expression
+MAIN.C(19): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+Program Size: data=52.0 xdata=0 code=2218
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C173: missing return-expression
+MAIN.C(19): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+Program Size: data=52.0 xdata=0 code=2219
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C173: missing return-expression
+MAIN.C(19): warning C290: missing return value
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+Program Size: data=52.0 xdata=0 code=2407
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2372
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_S?MAIN
+Program Size: data=49.0 xdata=0 code=2404
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2420
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2442
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2442
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(17): warning C280: 'l': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2420
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2433
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2442
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.1 xdata=0 code=2444
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_STRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2377
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2403
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=49.0 xdata=0 code=2402
+creating hex file from "temp"...
+"temp" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=50.0 xdata=0 code=2403
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=50.0 xdata=0 code=2403
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(26): error C141: syntax error near ','
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(26): error C141: syntax error near ','
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(26): warning C209: '_LCD_Write_Float': too few actual parameters
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2438
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(26): warning C209: '_LCD_Write_Float': too few actual parameters
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2444
+creating hex file from "temp"...
+"temp" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2446
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2444
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2436
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): warning C280: 'loop': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_CLEAR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_CHAR2?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITE_HEX?MAIN
+Program Size: data=54.0 xdata=0 code=2436
+creating hex file from "temp"...
+"temp" - 0 Error(s), 4 Warning(s).
